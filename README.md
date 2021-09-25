@@ -35,14 +35,14 @@ Additionally, the `python main.py` will take four arguments - </br>
   <li><i>--checkpoint_load</i> ->  Add <i>--checkpoint_load '&lt;path to load the checkpoint file from&gt;'</i> to load a saved checkpoint to the model.</li>
 </ul>
 
-For example, the following command will load the checkpoint file named 'mnist_sum.pth' from the path '/END2/S3/checkpoint/' to the model, train the model for a certain number of epochs specified in the configuration file and will then save the resulting model in the path '/END2/S3/checkpoint/' with the file name 'mnist_sum.pth' by replacing the previously existing checkpoint file, as it is of the same name:</br>
+For example, the following command will load the checkpoint file named 'mnist_sum.pth' from the path 'checkpoint/' to the model, train the model for a certain number of epochs specified in the configuration file and will then save the resulting model in the path 'checkpoint/' with the file name 'mnist_sum.pth' by replacing the previously existing checkpoint file, as it is of the same name:</br>
 `python main.py --mode 'Train' --checkpoint_load './checkpoint/mnist_sum.pth' --checkpoint_save './checkpoint/mnist_sum.pth'`
 
 ### On Google Colaboratory
 
 Upload this entire repository to your Google Drive manually or clone this repository onto your Google Drive through a google colab file by first mounting your google drive and changing the directory to the one where you need this repo to be cloned.
 
-Once cloned, open the <b>main.ipynb</b> file and run all the commands or create your own colab file and change the working directory to the <b>S3</b> subdirectory and type `!python main.py`. This will take 4 arguments too, as mentioned in the previous section related to the local desktop machine process.
+Once cloned, open the <b>main.ipynb</b> file and run all the commands or create your own colab file and change the working directory to cloned repo location on GDrive and type `!python main.py`. This will take 4 arguments too, as mentioned in the previous section related to the local desktop machine process.
   
 For example,</br>
 `!python main.py --mode 'Train' --checkpoint_load './checkpoint/mnist_sum.pth' --checkpoint_save './checkpoint/mnist_sum.pth'` </br>
